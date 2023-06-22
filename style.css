@@ -1,0 +1,255 @@
+/* ---- google fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    /* font-family: 'Marcellus', serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+    color: white;
+    color: black;
+}
+
+body {
+    background-size: cover;
+    /* height: 100%; */
+    height: 100vh;
+    /* background: linear-gradient(50deg, rgb(197, 147, 247),rgba(114, 72, 116, 0.711),rgba(255, 255, 255, 0.777)); */
+    /* background: linear-gradient(58deg, rgba(244, 160, 33, 0.301),rgba(245, 222, 179, 0.325),rgba(165, 42, 42, 0.099)); */
+    background-color: var(--b-color);
+    background-color: rgba(187, 177, 236, 0.189);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --w-color: rgb(255, 255, 255);
+    --b-color: rgb(0, 0, 0);
+    --v-color: rgb(154, 69, 234);
+    --g-color: rgba(24, 212, 24, 0.898);
+    --blu-color: rgb(91, 136, 226);
+    --font-lscreen: 1.3rem;
+    --txt-shadow: 0px 0px 22px;
+
+    --font-s: 1.4rem;
+    --font-m: 1.6rem;
+    --font-l: 1.8rem;
+    --font-xl: 3.4rem;
+
+    --line-h: 34px;
+    --ltr-spacing: 0.02cm;   
+
+}
+
+/* ==================== nav =================== */
+nav {
+    margin: 0.6% 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 5%;
+    /* border: 2px solid black; */
+}
+
+.navlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlogo i {
+    font-size: 1.8rem;
+    margin-right: 5px;
+    color: var(--g-color)
+}
+
+.centernav {
+    margin-left: 6%;
+
+}
+
+.centernav ul {
+    display: flex;
+    height: auto;
+}
+
+.centernav ul li {
+    list-style: none;
+    padding: 0px 8px;
+}
+
+.centernav ul li a {
+    font-weight: 800;
+}
+
+#menu {
+    display: none;
+}
+
+
+@media (max-width: 425px){
+    .centernav{
+        display: none;
+    }
+}
+
+
+/* ------------------------------------- photo and intro ------------------------------------- */
+
+header {
+    margin: 5% 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,390px));
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid gold; */
+}
+
+.leftsec {
+    letter-spacing: initial;
+    font-size: var(--font-s);
+    padding: 4% 2% 10% 10%;
+    line-height: 30px;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+.lsdiv b {
+    font-size: var(--font-l);
+    color: var(--v-color);
+    text-shadow: var(--txt-shadow);
+}
+#element {
+    font-size: var(--font-m);
+    color: var(--v-color);
+    text-shadow: var(--txt-shadow);
+}
+
+
+#photodiv{
+    display: flex;
+    justify-content: center;
+}
+#photodiv img {
+    width: 260px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px var(--b-color);
+}
+
+
+@media (min-width : 1024px) {
+    header{
+        margin: 8% 0px;
+    }
+    .leftsec {
+        font-size: 1.8em;
+        padding: 4% 0% 4% 4%;
+        line-height: 44px;    
+    }
+    .lsdiv b {
+        font-size: 2.3rem;
+    }
+    #element {
+        font-size: 2.65rem;
+    }
+    
+}
+
+
+/* ===================== About ===================== */
+
+#abth1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: var(--font-xl);
+    color: var(--v-color);
+    /* color: rgba(160, 38, 212, 0.847); */
+}
+#mainabt{
+    margin: 5% 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,390px));
+    justify-content: center;
+    align-items: center;
+}
+.abtclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#abtdiv2{
+    font-weight: 600;
+    padding: 3%;
+    font-size: var(--font-s);
+    /* text-align: center; */
+    line-height: var(--line-h);
+    letter-spacing: var(--ltr-spacing);    
+
+    /* font-family: 'Marcellus', serif; */
+
+}
+#abtdiv1 img{
+    height:300px;
+    width: auto;
+    padding: 18px 2px;
+}
+
+
+/* ===================== CARDS ===================== */
+
+#projh1{
+    mar
+}
+#projects_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0px;
+    flex-wrap: wrap;
+}
+.cards {
+    perspective: 500px;
+    padding: 30px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 250px;
+    background-image: url("images/3d.png");
+    background-size: cover;
+    background-position: center;
+    /* background: #16161d; */
+    border: 2px solid #000000;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card_title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .card:hover .card_title {
+    transform: translateZ(50px);
+  }
