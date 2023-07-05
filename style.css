@@ -172,7 +172,8 @@ header {
 #mainabt{
     margin: 5% 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,390px));
+    /* grid-template-columns: repeat(auto-fit,minmax(280px,390px)); */
+    grid-template-columns: repeat(auto-fit,minmax(280px,470px));
     justify-content: center;
     align-items: center;
 }
@@ -183,15 +184,20 @@ header {
 }
 #abtdiv2{
     font-weight: 600;
-    padding: 3%;
+    padding: 8%;
     font-size: var(--font-s);
     /* text-align: center; */
     line-height: var(--line-h);
     letter-spacing: var(--ltr-spacing);    
 
     /* font-family: 'Marcellus', serif; */
-
 }
+@media (min-width : 1440px) {
+    #abtdiv2{
+        padding: 0px;
+    }
+}
+
 #abtdiv1 img{
     height:300px;
     width: auto;
@@ -199,10 +205,43 @@ header {
 }
 
 
+
+/* === Experience and Education */
+
+#subdivabt{
+    /* margin: 5% 0px; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(280px,390px)); */
+    grid-template-columns: repeat(auto-fit,minmax(280px,470px));
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.abteclass h2{
+    font-size: var(--font-l);
+    color: var(--v-color);
+    opacity: 0.9;
+    padding: 10px 0px;
+}
+.abteclass{
+    margin: 10px;
+    padding-left: 40px;
+    border-left: 2px solid black;
+    /* border-bottom: 2px solid black; */
+    border-radius: 0px 0px 0px 70px;
+    border-width: 3px;
+}
+#abteclass ul li{
+    list-style: square;
+}
+
 /* ===================== CARDS ===================== */
 
 #projh1{
-    mar
+    margin-top: 55px;
+    text-align: center;
+    font-size: var(--font-xl);
+    color: var(--v-color);
 }
 #projects_cards{
     display: flex;
@@ -238,18 +277,54 @@ header {
   
   .card_title {
     color: #fff;
+    color: var(--b-color);
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
     transition: transform .5s;
     font: 700 1.5rem monospace;
-    text-shadow: -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000000,  
+      1px -1px 0 #130000,
+      -1px 1px 0 #000000,
+       1px 1px 0 #080000;
+    text-shadow: -2px -2px 3px var(--w-color),  
+       2px -2px 3px #fff8f8,
+       -2px 2px 3px var(--w-color),
+        2px 2px 3px #e5dada;
   }
   
   .card:hover .card_title {
     transform: translateZ(50px);
-  }
+}
+.card:hover{
+      box-shadow: -3px -3px 20px var(--b-color);
+}
+
+/* === img to all cards === */
+#cd1{
+    background-image: url("images/1\ pro\ 3D\ Design.png");
+    background-size: cover;
+    
+    background-position: center;
+}
+#cd2{
+    background-image: url("images/2\ pro\ yummy.png");
+    background-size: cover;
+    background-position: center;
+}
+#cd3{
+    background-image: url("images/3\ pro\ clk.png");
+    background-size: cover;
+    background-position: center;
+}
+#cd4{
+    background-image: url("images/login\ pro\ 4.png");
+    background-size: cover;
+    background-position: center;
+}
+#cd5{
+    background-image: url("images/to\ do\ pro\ 5.png");
+    background-size: cover;
+    background-position: center;
+}
