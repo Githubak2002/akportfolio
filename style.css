@@ -328,3 +328,27 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+
+
+/* ===================== FOOTER ==================== */
+
+ 
+footer{
+    padding-bottom: 7%;
+    text-align: center;
+}
+.footdivmain i{
+    font-size: 2rem;
+}
+.footdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20% 20px; */
+    /* border: 2px solid; */
+}
+
+#cprt{
+    padding: 0px 6px;
+}
