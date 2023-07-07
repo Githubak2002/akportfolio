@@ -335,12 +335,14 @@ header {
 
  
 footer{
-    padding-bottom: 7%;
+    padding-bottom: 20px;
     text-align: center;
+}
+.footdivmain{
+    padding: 12px 0px;
 }
 .footdivmain i{
     font-size: 2rem;
-    padding: 10px 2px;
 }
 .footdivmain i:hover{
    color: var(--v-color);
