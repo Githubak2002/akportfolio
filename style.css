@@ -340,6 +340,11 @@ footer{
 }
 .footdivmain i{
     font-size: 2rem;
+    padding: 10px 2px;
+}
+.footdivmain i:hover{
+   color: var(--v-color);
+   cursor: pointer;
 }
 .footdiv{
     display: flex;
