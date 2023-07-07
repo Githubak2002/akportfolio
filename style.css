@@ -342,6 +342,7 @@ footer{
     padding: 12px 0px;
 }
 .footdivmain i{
+    padding: 0px 4px;
     font-size: 2rem;
 }
 .footdivmain i:hover{
