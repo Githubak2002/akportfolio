@@ -174,8 +174,9 @@ header {
     display: grid;
     /* grid-template-columns: repeat(auto-fit,minmax(280px,390px)); */
     grid-template-columns: repeat(auto-fit,minmax(280px,470px));
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    text-align: justify;
 }
 .abtclass{
     display: flex;
@@ -303,13 +304,13 @@ header {
 
 /* === img to all cards === */
 #cd1{
-    background-image: url("images/1\ pro\ 3D\ Design.png");
+    background-image: url("images/3D\ modelling.png");
     background-size: cover;
     
     background-position: center;
 }
 #cd2{
-    background-image: url("images/2\ pro\ yummy.png");
+    background-image: url("images/food\ web.png");
     background-size: cover;
     background-position: center;
 }
@@ -353,10 +354,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6px 0px;
     /* margin: 20% 20px; */
     /* border: 2px solid; */
 }
 
-#cprt{
-    padding: 0px 6px;
+#copyright-icon{
+    padding: 0px 3px;
 }
