@@ -10,6 +10,7 @@
     font-family: 'Play', sans-serif;
     color: white;
     color: black;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,56 +48,99 @@ a {
 }
 
 /* ==================== nav =================== */
-nav {
-    margin: 0.6% 0px;
+.navbr {
+    margin: 0px auto;
+    width: 100%;
+    height:60px;
+    max-width: 800px;
+    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    margin: 1% 5%;
-    /* border: 2px solid black; */
-}
-
-.navlogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navlogo i {
-    font-size: 1.8rem;
-    margin-right: 5px;
-    color: var(--g-color)
-}
-
-.centernav {
-    margin-left: 6%;
-
-}
-
-.centernav ul {
-    display: flex;
-    height: auto;
-}
-
-.centernav ul li {
-    list-style: none;
-    padding: 0px 8px;
-}
-
-.centernav ul li a {
-    font-weight: 800;
-}
-
-#menu {
-    display: none;
-}
-
-
-@media (max-width: 425px){
-    .centernav{
+    
+        /* border: 2px solid black; */
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    li{
+        list-style: none;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 0px 10px;
+    }
+     a{
+        text-decoration: none;
+        color:black;
+        font-size: 1.5rem;
+    }
+    
+    
+    .toggle_btn{
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        /* display: none; */
+    }
+    .divheader {
+        position: relative;
+        padding: 0 2rem;
+    }
+    
+    /* DROPDOWN MENU */
+    .dropdown_menu{
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        width: 300px;
+    
+        height: 0;
+    
+        background:  rgba(187, 177, 236, 0.389);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+        /* transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) */
+        ;
+    }
+    .dropdown_menu.open{
+        height: auto;
+    }
+    .dropdown_menu li{
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+        
+    
+    
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 992px) {
+        .navbr .links{
+        display: none;
+        }
+    }
+    
+    @media (min-width: 992px) {
+    .toggle_btn{
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
         display: none;
     }
-}
+    }
+    @media (max-width: 576px) {
+        .dropdown_menu{
+            left: 2rem;
+            width: unset;
+        }
+    }
+    
 
 
 /* ------------------------------------- photo and intro ------------------------------------- */
