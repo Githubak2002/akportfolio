@@ -388,6 +388,23 @@ footer{
     padding-bottom: 20px;
     text-align: center;
 }
+
+#contact-btn{
+    height: 36px;
+    padding: 2px 10px;
+    margin-bottom: 6px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(177, 208, 236, 0.3);
+}
+#contact-btn:hover{
+    color: var(--v-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.258);
+    transform: translateY(-2px);
+}
 .footdivmain{
     padding: 12px 0px;
 }
