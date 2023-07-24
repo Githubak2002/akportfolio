@@ -48,6 +48,26 @@ a {
 }
 
 /* ==================== nav =================== */
+.divheader{
+    margin-top: 10px;
+}
+.logo{
+    background: linear-gradient(78deg,rgb(57, 57, 236),rgba(235, 26, 235, 0.887),
+    rgba(0, 155, 251, 0.802));
+    background-clip:content-box;
+    text-transform: uppercase;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+    font-size: 60px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 6px;
+    padding-right: 18px;
+    border-bottom: 5px solid var(--v-color);
+    border-radius: 0px 0px 100px 4px;
+    /* border-right: 3px solid orange; */
+}
 .navbr {
     margin: 0px auto;
     width: 100%;
@@ -57,6 +77,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:sticky;
     
         /* border: 2px solid black; */
     }
@@ -74,7 +95,12 @@ a {
      a{
         text-decoration: none;
         color:black;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+    .links li a:hover{
+        color: var(--v-color);
+        border-bottom: 2px solid var(--v-color);
     }
     
     
@@ -138,6 +164,18 @@ a {
         .dropdown_menu{
             left: 2rem;
             width: unset;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .logo{
+            font-size: 30px;
+            font-weight: 900;
+            cursor: pointer;
+            margin-top: 3px;
+            padding-right: 8px;
+            border-bottom: 3px solid var(--v-color);
+            border-radius: 0px 0px 40px 4px;
         }
     }
     
@@ -378,6 +416,16 @@ header {
     background-size: cover;
     background-position: center;
 }
+#cd7{
+    background-image: url("images/youtube-logo.png");
+    background-size: cover;
+    background-position: center;
+}
+#cd8{
+    background-image: url("images/movie-png.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -385,19 +433,28 @@ header {
 
  
 footer{
+    padding-top: 24px;
     padding-bottom: 20px;
     text-align: center;
+    border-top: 1.4px solid;
 }
 
 #contact-btn{
-    height: 36px;
-    padding: 2px 10px;
-    margin-bottom: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
     border: 2px solid;
-    border-radius: 8px;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 700;
     background-color: rgba(177, 208, 236, 0.3);
+}
+@media (max-width : 520px) {
+    #contact-btn{
+        padding: 2px 10px;
+        margin-bottom: 6px;
+        border: 2px solid;
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 #contact-btn:hover{
     color: var(--v-color);
@@ -405,13 +462,24 @@ footer{
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.258);
     transform: translateY(-2px);
 }
+
+/* social media icons */
 .footdivmain{
     padding: 12px 0px;
 }
 .footdivmain i{
     padding: 0px 4px;
-    font-size: 2rem;
+    font-size: 3.4rem;
+    font-weight: 100;
 }
+
+@media (max-width : 520px) {
+    .footdivmain i{
+        padding: 0px 4px;
+        font-size: 2.2rem;
+    }
+}
+
 .footdivmain i:hover{
    color: var(--v-color);
    cursor: pointer;
