@@ -453,6 +453,9 @@ header {
 #pf11:hover{
     color: var(--v-color);
     cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+    translate:0px -4px;
 }
 
 /* ===================== FOOTER ==================== */
