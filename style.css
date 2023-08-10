@@ -385,6 +385,22 @@ header {
 }
 
 /* === img to all cards === */
+#cd13{
+    background-image: url("images/contact.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#cd12{
+    background-image: url("images/weather.png");
+    background-size: cover;
+    background-position: center;
+}
+#cd11{
+    background-image: url("images/cricket.png");
+    background-size: cover;
+    background-position: center;
+}
+
 #cd1{
     background-image: url("images/3D\ modelling.png");
     background-size: cover;
@@ -427,7 +443,17 @@ header {
     background-position: center;
 }
 
-
+.projectfooter{
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+#pf11{
+    margin-bottom: 20px;
+}
+#pf11:hover{
+    color: var(--v-color);
+    cursor: pointer;
+}
 
 /* ===================== FOOTER ==================== */
 
