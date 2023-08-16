@@ -330,7 +330,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4% 0px;
+    margin: 4% auto;
+    max-width: 1280px;
     flex-wrap: wrap;
 }
 .cards {
