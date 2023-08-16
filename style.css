@@ -330,7 +330,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% 0px;
+    margin: 4% 0px;
     flex-wrap: wrap;
 }
 .cards {
@@ -385,13 +385,36 @@ header {
 }
 
 /* === img to all cards === */
-#cd13{
-    background-image: url("images/contact.jpg");
+
+/* imgs search using API */
+#cd16{
+    background-image: url("images/imgsearch.png");
     background-size: cover;
     background-position: center;
 }
+/* --- fetch movies with API REACT */
+#cd15{
+    background-image: url("images/movie-png.png");
+    background-size: cover;
+    background-position: center;
+}
+/* --- Ui to website design REACT and Tailwind Css */
+#cd14{
+    background-image: url("images/UI\ to\ website.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* contact pg using React */
+#cd13{
+    background-image: url("images/contacts.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Weather using API in React */
 #cd12{
-    background-image: url("images/weather.png");
+    background-image: url("images/weatherapp.png");
     background-size: cover;
     background-position: center;
 }
@@ -438,7 +461,7 @@ header {
     background-position: center;
 }
 #cd8{
-    background-image: url("images/movie-png.png");
+    background-image: url("images/moviesAPI.png");
     background-size: cover;
     background-position: center;
 }
@@ -446,13 +469,21 @@ header {
 .projectfooter{
     text-align: center;
     padding: 0px 0px 10px 0px;
+    margin-bottom: 10px;
+    font-weight: 200;
 }
 #pf11{
     margin-bottom: 20px;
 }
-#pf11:hover{
+#pf11:hover {
     color: var(--v-color);
     cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+    translate:0px -4px;
+}
+.ri-github-line:hover{
+    color: var(--v-color);
     transition: all;
     transition-duration: 1s;
     translate:0px -4px;
@@ -492,13 +523,14 @@ footer{
     transform: translateY(-2px);
 }
 
-/* social media icons */
+/* ----- social media icons ----- */
 .footdivmain{
     padding: 12px 0px;
+
 }
 .footdivmain i{
     padding: 0px 4px;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 
