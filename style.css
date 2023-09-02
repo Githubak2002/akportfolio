@@ -7,7 +7,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
+    font-family: 'Marcellus', serif;
     color: white;
     color: black;
     scroll-behavior: smooth;
@@ -43,7 +44,7 @@ a {
     --font-xl: 3.4rem;
 
     --line-h: 34px;
-    --ltr-spacing: 0.02cm;   
+    --ltr-spacing: 0.01cm;   
 
 }
 
@@ -216,10 +217,17 @@ header {
     justify-content: center;
 }
 #photodiv img {
-    width: 260px;
+    width: 270px;
     height: auto;
-    border-radius: 10%;
-    box-shadow: 0px 0px 30px var(--b-color);
+    /* border-radius: 10%; */
+    /* box-shadow: 0px 0px 30px var(--b-color); */
+}
+
+@media (min-width : 1024px){
+    #photodiv img {
+        width: 320px;
+        height: auto;
+    }
 }
 
 
@@ -260,6 +268,12 @@ header {
     align-items: center;
     text-align: justify;
 }
+@media (max-width : 940px) {
+    #mainabt{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 .abtclass{
     display: flex;
     justify-content: center;
@@ -269,11 +283,8 @@ header {
     font-weight: 600;
     padding: 8%;
     font-size: var(--font-s);
-    /* text-align: center; */
     line-height: var(--line-h);
     letter-spacing: var(--ltr-spacing);    
-
-    /* font-family: 'Marcellus', serif; */
 }
 @media (min-width : 1440px) {
     #abtdiv2{
@@ -318,13 +329,106 @@ header {
     list-style: square;
 }
 
-/* ===================== CARDS ===================== */
+
+/* ================================== PROJECTS ================================== */
 
 #projh1{
     margin-top: 55px;
+    margin-bottom: 55px;
     text-align: center;
     font-size: var(--font-xl);
     color: var(--v-color);
+}
+
+/* ============ PROJECTS ===== professional img div ============ */
+
+#professionalcardsecid1{
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.porjectCardDiv{
+    /* margin: 0 auto; */
+    /* margin-top: 40px; */
+    border: 2px solid black;
+    width: 270px;
+    /* height: 300px; */
+}
+.porjectCardDiv h4{
+    margin: 12px 0px;
+    font-size: large ;
+}
+.proimgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 172px;
+    width: 100%;
+    overflow: hidden;
+    /* background-size: cover; */
+}
+.proimgdiv a{
+    height: 100%;
+    width: 100%;
+}
+.proimgdiv img{
+    height: 100%;
+    width: 100%;
+}
+.proimgdiv img:hover{
+    transition:all 0.3s ease-in ;
+    scale: 1.1;
+    cursor: pointer;
+}
+.procontentdiv p{
+    line-height: 24px;
+}
+.flex03{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+}
+.flex03 i{
+    font-size: x-large;
+    font-weight: 100;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.flex03 i:hover{
+    color: var(--v-color);
+}
+
+/* ===================== Projects CARDS ===================== */
+
+/* ------ 3d modelling card ----- */
+.modellig{
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16%;
+    line-height: 25px;
+    border-top: 1.2px solid slategray;
+    border-bottom: 1.2px solid slategray;
+    /* border: 2px solid black; */
+}
+@media (max-width: 940px){
+    .modellig{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 8%;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
 }
 #projects_cards{
     display: flex;
@@ -474,7 +578,9 @@ header {
     font-weight: 200;
 }
 #pf11{
+    margin: 0px auto;
     margin-bottom: 20px;
+    width: fit-content;
 }
 #pf11:hover {
     color: var(--v-color);
@@ -483,7 +589,7 @@ header {
     transition-duration: 1s;
     translate:0px -4px;
 }
-.ri-github-line:hover{
+#footerGitIcon:hover{
     color: var(--v-color);
     transition: all;
     transition-duration: 1s;
@@ -500,27 +606,29 @@ footer{
     border-top: 1.4px solid;
 }
 
-#contact-btn{
+#contactbtn{
     padding: 12px;
     margin-bottom: 12px;
-    border: 2px solid;
-    font-size: 26px;
-    font-weight: 700;
+    border: 2px solid ;
+    border-radius: 1.5px;
+    /* font-size: 26px; */
+    /* font-weight: 700; */
     background-color: rgba(177, 208, 236, 0.3);
 }
 @media (max-width : 520px) {
-    #contact-btn{
-        padding: 2px 10px;
+    #contactbtn{
+        padding: 8px;
         margin-bottom: 6px;
-        border: 2px solid;
+        border: 1.4px solid;
         font-size: 16px;
         font-weight: 500;
     }
 }
-#contact-btn:hover{
+#contactbtn:hover{
     color: var(--v-color);
     cursor: pointer;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.258);
+    border: 2px solid;
     transform: translateY(-2px);
 }
 
@@ -550,11 +658,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 0px;
+    /* padding: 6px 0px;     */
+    /* font-weight: 100; */
+    /* font-size: 40px; */
     /* margin: 20% 20px; */
     /* border: 2px solid; */
 }
 
 #copyright-icon{
-    padding: 0px 3px;
+    padding: 0px 2px;
 }
