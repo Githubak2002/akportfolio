@@ -183,7 +183,9 @@ a {
 
 
 /* ------------------------------------- photo and intro ------------------------------------- */
-
+#myimg{
+    filter: drop-shadow(0px 6px 15px rgb(154, 69, 234));
+}
 header {
     margin: 5% 0px;
     display: grid;
