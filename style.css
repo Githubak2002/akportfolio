@@ -404,13 +404,23 @@ header {
     animation: fade 3s ease-in 0s infinite normal;
     height: 70px;
     transform-origin: center;
+    /* animation : name duration timing-fun delay iteration-count  */
 }
 .skillimg2 img{
-    animation: fade 3s ease-in 4s infinite normal;
+    animation: fade 5s ease-in 0s infinite normal;
     height: 70px;
     transform-origin: center;
 }
-
+.skillimg3 img{
+    animation: fade 5s ease-in 4s infinite normal;
+    height: 70px;
+    transform-origin: center;
+}
+.skillimg4 img{
+    animation: fade 5s ease-in 8s infinite normal;
+    height: 70px;
+    transform-origin: center;
+}
 @media (max-width:500px){
     .skill_imgs{
         height: 40%;
