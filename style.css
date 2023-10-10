@@ -412,10 +412,10 @@ header {
 }
 
 @media (max-width:500px){
-    /* .skill_imgs{
-        height: 50%;
-        margin: 0px 10px; 
-    }*/
+    .skill_imgs{
+        height: 30%;
+        margin: 18px 8px; 
+    }
 }
 
 
