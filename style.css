@@ -356,6 +356,68 @@ header {
     color: var(--v-color);
 }
 
+
+
+
+/* ================================== SKILLS ================================== */
+.skill_imgs{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    height: 150px;
+
+    /* border:2px solid black; */
+
+}
+@keyframes fade{
+    0%{
+        opacity: 0.4;
+        height: 40px;
+    }
+    50%{
+        opacity: 0.9;
+        height: 50px;
+
+    }
+    100%{
+        opacity: 0.4;
+        height: 40px;
+    }
+}
+.skillimg1{
+    /* animation: ami_name duration type delay iteration_count; */
+    /* animation: fade 4s ease-in 0s infinite normal; */
+    background-position: center;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.skillimg1 img{
+    animation: fade 3s ease-in 0s infinite normal;
+    height: 70px;
+    transform-origin: center;
+}
+.skillimg2 img{
+    animation: fade 3s ease-in 4s infinite normal;
+    height: 70px;
+    transform-origin: center;
+}
+
+@media (max-width:500px){
+    /* .skill_imgs{
+        height: 50%;
+        margin: 0px 10px; 
+    }*/
+}
+
+
+
 /* ============ PROJECTS ===== professional img div ============ */
 
 #professionalcardsecid1{
