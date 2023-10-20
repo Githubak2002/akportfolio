@@ -291,6 +291,10 @@ header {
         display: flex;
         flex-direction: column-reverse;
     }
+    #abtdiv2{
+        padding: 4%;
+    }
+
 }
 .abtclass{
     display: flex;
@@ -299,7 +303,7 @@ header {
 }
 #abtdiv2{
     font-weight: 600;
-    padding: 8%;
+    padding-right: 8%;
     font-size: var(--font-s);
     line-height: var(--line-h);
     letter-spacing: var(--ltr-spacing);    
@@ -309,11 +313,14 @@ header {
         padding: 0px;
     }
 }
+@media (min-width : 1440px) {
+
+}
 
 #abtdiv1 img{
-    height:300px;
+    height:260px;
     width: auto;
-    padding: 18px 2px;
+    margin: 0px 20px;
 }
 
 
