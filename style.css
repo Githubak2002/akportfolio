@@ -15,15 +15,52 @@
 }
 
 body {
-    background-size: cover;
     /* height: 100%; */
-    height: 100vh;
     /* background: linear-gradient(50deg, rgb(197, 147, 247),rgba(114, 72, 116, 0.711),rgba(255, 255, 255, 0.777)); */
-    /* background: linear-gradient(58deg, rgba(244, 160, 33, 0.301),rgba(245, 222, 179, 0.325),rgba(165, 42, 42, 0.099)); */
+    /* background: linear-gradient(39deg, rgba(244, 160, 33, 0.301),rgba(245, 222, 179, 0.325),rgba(165, 42, 42, 0.099)); */
+    background-size: cover;
+    height: 100vh;
     background-color: var(--b-color);
     background-color: rgba(187, 177, 236, 0.189);
-
 }
+
+/* temp */
+
+
+/* gpt gradient animated background 
+body {
+    background: linear-gradient(45deg, #007acb1d, #f4ecff34, #a300cc35, #005ccc33);
+    background: linear-gradient(38deg, #0088ff48, rgba(255, 0, 217, 0.126), #5e00eb28);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+*/
+
+ 
+  
+
+
+
+
+
+
+
+
+
+  /* ========================================================== */
 
 a {
     text-decoration: none;
