@@ -9,5 +9,5 @@
 
 
 GitHub → https://githubak2002.github.io
-Portfolio → https://githubak2002.github.io/akportfolio
 LinkedIn → https://www.linkedin.com/in/anuraglohar
+Portfolio → https://githubak2002.github.io/akportfolio
