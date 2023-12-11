@@ -1,4 +1,6 @@
-# live at - https://githubak2002.github.io/akportfolio
+<h2><a href="https://githubak2002.github.io/akportfolio"> live at - </a></h2>
+<h2><a href="https://ak-nextjs-portfolio.vercel.app"> Updated portfolio Live- </a></h2>
+
 
 
 		- Responsive design
@@ -8,6 +10,6 @@
 
 
 
-GitHub → https://githubak2002.github.io
-LinkedIn → https://www.linkedin.com/in/anuraglohar
-Portfolio → https://githubak2002.github.io/akportfolio
+- GitHub → https://githubak2002.github.io
+- LinkedIn → https://www.linkedin.com/in/anuraglohar
+- Portfolio → https://githubak2002.github.io/akportfolio
